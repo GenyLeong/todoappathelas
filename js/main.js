@@ -33,20 +33,20 @@ var contador=0;
 function hacer_click(elemento){
 	
 	var subrayado = elemento.parentElement.parentElement.parentElement;
-	// subrayado.classList.toggle('rayados')
+	
+	var hechas = document.getElementById('hechas')
+	var porhacer = document.getElementById('porhacer')
 
-		contador++;
-	if (contador%2 ==0) {
-		subrayado.classList.remove('rayados')	
-		var porhacer = document.getElementById("porhacer")
-	   	porhacer.appendChild(subrayado);
+	var x = elemento.checked;
+
+	if (x==true){
+		subrayado.classList.add('rayados')
+		hechas.appendChild(subrayado)
 	}
 
-	else {
-		// contador++;
-		subrayado.classList.add('rayados')		
-		var hechas = document.getElementById("hechas");
-		hechas.appendChild(subrayado);	
+	if (x==false){
+		subrayado.classList.remove('rayados')
+		porhacer.appendChild(subrayado)
 	}
 
 }
