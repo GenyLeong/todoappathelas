@@ -3,7 +3,7 @@
 height: 100px; */
 }
 
-html { overflow:hidden; }
+/*html { overflow:hidden; }*/
 
 .navbar-header {
     padding: 15px;
@@ -30,10 +30,10 @@ html { overflow:hidden; }
 	margin-bottom: 21px;
 }
 
-#tweets{
+#hechas, #porhacer{
 	margin-top: 35px;
-	overflow-y: scroll;
-	height: 700px;
+/*	overflow-y: scroll;
+	height: 700px;*/
 	width: 100%;
 	border: 1px solid #ddd;
 	background: #f1f1f1;
